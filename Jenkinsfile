@@ -15,7 +15,7 @@ pipeline {
 	  }
 	    stage("war file deploy"){
 	    steps{
-	     sshagent(['salve']) {
+	     sshagent(['slave-id']) {
 	     sh "scp -o StringHostKeyChecking=no target/myweb.war ubuntu@172.31.7.174:/var/lib/tomcat8/webapps"
 		}
 	   }
