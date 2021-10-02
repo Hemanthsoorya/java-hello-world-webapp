@@ -16,7 +16,7 @@ pipeline {
 	    stage("war file deploy"){
 	    steps{
 	     sshagent(['slave-id']) {
-	     sh "scp -o StringHostKeyChecking=no target/myweb.war ubuntu@172.31.7.174:/var/lib/tomcat8/webapps"
+	     sh "scp -o StrictHostKeyChecking=no ta=norget/myweb.war ubuntu@172.31.7.174:/var/lib/tomcat8/webapps"
 		}
 	   }
 	 }
