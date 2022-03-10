@@ -1,5 +1,3 @@
-jenkins pipeline syntax ************************
-
 pipeline {
 agent any
  stages{
