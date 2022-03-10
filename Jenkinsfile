@@ -16,7 +16,7 @@ agent any
  steps{
  sshagent(['Slave id']) {
     // some block
-sh "scp -o StrictHostKeyChecking=no target/myweb.war Ubuntu@3.111.39.119:/var/lib/tomcat8/webapps"
+sh "scp -o StrictHostKeyChecking=no target/myweb.war Ubuntu@172.31.9.165:/var/lib/tomcat8/webapps"
 }
  }
  }
