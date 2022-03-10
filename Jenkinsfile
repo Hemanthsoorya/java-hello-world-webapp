@@ -6,7 +6,7 @@ agent any
  git credentialsId: 'Github-cer', url: 'https://github.com/Hemanthsoorya/java-hello-world-webapp.git'
  }
  }
- stage("maven built"){
+ stage("java build"){
  steps{
  sh 'mvn clean package'
  }
