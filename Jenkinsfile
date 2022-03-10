@@ -22,6 +22,6 @@ sh "scp -o StrictHostKeyChecking=no target/myweb.war Ubuntu@3.111.39.119:/var/li
  }
  }
  }
-}
+
 
 
