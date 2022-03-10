@@ -14,7 +14,7 @@ agent any
  }
  stage("War File Deploy"){
  steps{
- sshagent(['slave-id1']) {
+ sshagent(['slave-id2']) {
     // some block
 sh "scp -o StrictHostKeyChecking=no target/myweb.war Ubuntu@172.31.9.165:/var/lib/tomcat8/webapps"
 }
