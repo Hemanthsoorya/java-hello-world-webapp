@@ -9,7 +9,7 @@ pipeline {
 	  stage("Build Stage"){
 	    steps{
 		sh 'mvn clean package'
-		sh 'mv target/*.war target/myweb.war'
+		sh 'mv target/*.war target/Surya.war'
 		}
 	  }
 	  stage("war file deploy"){
